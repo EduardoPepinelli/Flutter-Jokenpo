@@ -40,7 +40,7 @@ var machWin = 0;
       break;
     }
     //Validação vencedor
-    //usuaro vence
+    //usuário vence
     if(
       (userOption == "pedra" && machOp == "tesoura") ||
       (userOption == "papel" && machOp == "pedra") ||
@@ -51,6 +51,7 @@ var machWin = 0;
       this._message = "Parabéns você venceu!";
       print(userScore);
     }
+    //máquina vence
     else if (
       (machOp == "pedra" && userOption == "tesoura") ||
       (machOp == "tesoura" && userOption == "papel") ||
@@ -73,7 +74,7 @@ var machWin = 0;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("jokenpo"),
+        title: Text("Super Jokenpo"),
 
       ) ,
    
@@ -89,7 +90,7 @@ var machWin = 0;
             color: Colors.blue,
             ),
           child: Text(
-          "PLACAR: USUÁRIO: $userWin X MÁQUINA: $machWin",
+          "PLACAR: VOCÊ: $userWin X ADVERSÁRIO: $machWin",
           textAlign: TextAlign.center,
           style: TextStyle( 
             fontSize: 20,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/jogo.dart';
+import 'package:myapp/Jokenpo.dart';
 void main(){
   runApp(
     MaterialApp(
